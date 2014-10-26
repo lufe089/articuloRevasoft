@@ -200,51 +200,67 @@ Introducción al trabajo que se quiere presentar, citando las referencias del cas
 
 \section{Conceptos preliminares}
 \label{sec:conceptosPrliminares}
+ 
+\section{Experiencias relacionadas con líneas de productos de software}
+En el Departamento de Electrónica y Ciencias de la Computación de la Pontificia
+Universida Javeriana de Cali, se ha venido trabajando durante este año en el
+desarrollo de proyectos relacionados con ingeniería de líneas de productos de
+software, pues se considera que éste es un tema de interés para la
+industria de desarrollo de software de la región y el país. 
 
-\section{Experiencias relacionadas con las líneas de productos de software}
-La investigación desde la ingeniería de líneas de productos en el contexto de la
-Pontificia Universidad Javeriana de Cali se enmarca en los dos procesos
-principales de la ingeniería de líneas de productos. Así, se han desarrollado
-trabajos desde la ingeniería de domino y se planean desarrollar algunas
-aproximaciones desde la ingeniería de aplicación. 
-
-A continuación se presentan los trabajos desarrollados y los trabajos por
-desarrollar relacionados con ambas áreas. 
+A continuación se presentan los trabajos desarrollados y los trabajos que se
+planean desarrollar sobre está línea de investigación.
 
 \subsection{Trabajos desarrollados}
 \label{subsec:trabajosDesarrollados}
 
-Las líneas de productos de software se expresan usando modelos. Estos modeloss
-experiencia de trabajo con las líneas de productos con anterior Los defectos semánticos son aquellas imperfecciones que afectan la capacidad del modelo de
-características para representar correctamente el dominio que desea representar
-\cite{Salinesi2012}.
+Las líneas de productos de software se representan por medio de modelos, pues
+éstos sirven como un punto de comunicaci\'{o}n intermedia entre los usuarios
+finales y los desarrolladores de la LP \cite{Kang1990}. Estos modelos permiten
+por ejemplo, identificar cu\'{a}les son las caracter\'{i}sticas comunes a todos
+los productos de la línea de productos y cu\'{a}les son las caracter\'{i}sticas
+variables; cu\'{a}les caracter\'{i}sticas deben ir juntas en todos los productos y cu\'{a}les
+caracter\'{i}sticas no pueden ir al mismo tiempo en un producto \cite{Kang1990}.
 
-Desde la ingeniería de domino, en trabajos previos propusimos un método para
-detectar defectos semánticos en modelos de variabilidad, junto con las causas
-que los originan y las correcciones que podrían solucionar cada
-defecto\cite{Rincon2014}. Este método usa la programación por restricciones como
-herramienta para analizar los modelos de variabilidad software. De hecho la
-identificación de las causas y las correcciones se lleva a cabo por medio de la
-identificación de dos conceptos tomados de la programación por restricciones:
-los MCSes( \emph{Minimal Correction Subsets}) y MUSes (\emph{Minimal
-Unsatisfiable Subsets}).  Sin embargo, los resultados del análisis de los
-defectos de los modelos de varaibilidad se entregan en lenguaje natural. Esta
-separación permite que la programación por restricciones sea un mecanismo
-trasparente para el usuario final. De esta manera quienes diseñan los modelos de
-variabilidad pueden analizar con el método propuesto un modelo con el fin de
-identificar si éste tiene defectos semánticos. Si ese es el caso, los
-diseñadores pueden entonces analizar cada defecto para identificar (i) cuáles
-son la dependencias del modelo de variabilidad que originan el defecto, y (ii)
-cuáles dependencias deberían ser eliminadas del modelo para corregir el defecto.
+Los modelos de variabilidad se dise{\~n}an en una de las primeras
+etapas del desarrollo de la línea de productos y son un insumo importante para el resto del proceso de la
+ingeniería de línea de productos. Por esta razón, garantizar la calidad de los
+modelos de variabilidad es fundamental para obtener una línea de
+productos de calidad. Sin embargo, a medida que aumenta la complejidad de los
+modelos de variabilidad, es posible que quienes los elaboran introduzcan en
+ellos sin intención defectos semánticos. Los defectos sem\'{a}nticos son imperfecciones que afectan la
+capacidad del modelo de caracter\'{i}sticas para representar de manera correcta el dominio que se est\'{a}
+modelando \cite{Salinesi2012}. 
 
-Más detalles sobre el método propuesto están
+El trabajo desarrollado anteriormente sobre líneas de productos de software 
+\cita{} se interesa en la calidad de los modelos de variabilidad.
+Particularmente, en ese trabajo se propone un método que identifica
+defectos semánticos y sus correcciones en modelos de variabilidad. Para ello, 
+el método propuesto toma de la programación por restricciones el concepto de
+MCSes( \emph{Minimal Correction Subsets}) y lo aplica para identificar las correcciones
+de los defectos semánticos identificados. El método se encarga de
+transformar los modelos de variabilidad en programas de restricciones sobre los
+cuales se identifican los MCSes, que son las correcciones de
+los defectos. Especificamente, los MCSes corresponden a las dependencias
+que deben ser eliminadas de los modelos de variabilidad para solucionar al menos un defecto.
+
+Antes de entregar los resultados al usuario final, el método transforma a
+lenguaje natural las correcciones identificadas para cada defecto.
+De esta manera se obtienen en un lenguaje facilmente entendible por
+quienes diseñan los modelos de variabilidad, los defectos semánticos de los
+modelo de variabilidad y las correcciones para cada defecto.
+
+Más detalles sobre este método se encuentran disponibles en
 disponibles en \cite{Rincon2014, Rincon2013a}. 
 
-\section{Trabajos a desarrollar}
-\label{sec:trabajosDesarrollar}
+\subsection{Trabajos a desarrollar}
+\label{subsec:trabajosDesarrollar}
 
-\subsection{Generalizacion del método para identificar defectos }
-\label{subSec:generalizacionMetodo}
+En esta subsección se presentan los proyectos relacionados con ingeniería de
+líneas de productos que se llevarán en el corto y mediano plazo. 
+
+\subsubsection{Generalizacion del método para identificar defectos}
+\label{subsubSec:generalizacionMetodo}
 Emplear MUSes y MCSes para identificar causas y correcciones de defectos le
 ofrece una base formal al método propuesto para analizar los defectos. Por esa
 razón,  dentro de la agenda de trabajo actual se planea generalizar la propuesta
@@ -256,14 +272,13 @@ espera evaluar el método considerando el usuario final, la utilidad de la
 solución, la escalabilildad
 
 
-\subsection{Adopción del paradigma de líneas de productos de software }
-\label{subSec:adopcionParadigma}
+\subsubsection{Adopción del paradigma de líneas de productos de software }
+\label{subsubSec:adopcionParadigma}
 
-\subsubsection{Configuración de productos}
-\label{subsubsec:configuracion}
-
-\subsubsection{Ensamblaje de componentes}
-\label{subsubsec:ensamblaje}
+\begin{itemize}
+\item \textbf{Configuración de productos}
+\item \textbf{Ensamblaje de componentes}
+\end{itemize}
 
 \begin{figure}[h!]
 \begin{center}
