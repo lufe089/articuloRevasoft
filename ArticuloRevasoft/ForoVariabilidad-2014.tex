@@ -1,0 +1,310 @@
+% !TeX spellcheck = es-CO 
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.7 or later) with an IEEE conference paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%
+%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
+%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
+%%*************************************************************************
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. IEEE's font choices can trigger bugs that do  ***
+% *** not appear when using other class files.                            ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{graphicx}
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+%   \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at: 
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
+% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+\usepackage[font=footnotesize]{subfig}
+% subfig.sty, also written by Steven Douglas Cochran, is the modern
+% replacement for subfigure.sty. However, subfig.sty requires and
+% automatically loads Axel Sommerfeldt's caption.sty which will override
+% IEEEtran.cls handling of captions and this will result in nonIEEE style
+% figure/table captions. To prevent this problem, be sure and preload
+% caption.sty with its "caption=false" package option. This is will preserve
+% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later 
+% (recommended due to many improvements over 1.2) of subfig.sty supports
+% the caption=false option directly:
+%\usepackage[caption=false,font=footnotesize]{subfig}
+%
+% The latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
+% The latest version and documentation of caption.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
+
+
+\usepackage{stfloats}
+\hyphenation{op-tical net-works}
+
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc} \usepackage[activeacute, spanish]{babel}
+\usepackage{color}
+
+\usepackage{epstopdf}
+\usepackage{epsfig}
+
+
+
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Líneas de productos de software. Experiencias en la Pontificia
+Universidad Javeriana de Cali}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+
+% conference papers do not typically use \thanks and this command
+% is locked out in conference mode. If really needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+% 
+\author{\IEEEauthorblockN{
+Nombre1 Apellido1\IEEEauthorrefmark{1}\IEEEauthorrefmark{2},
+Nombre2 Apellido2\IEEEauthorrefmark{1},
+Nombre3 Apellido3\IEEEauthorrefmark{2}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}Facultad de Ingeniería, Universidad Universidad1, Ciudad, País.\\
+Email: \{email1,email2\}@universidad1.edu.co}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}Facultad de Ingeniería, Universidad Universidad2, Ciudad, País.\\
+Email: email3@universidad2.edu.co}}
+
+
+
+
+% make the title area
+\maketitle
+
+%{Review IEEE compliant \& create bibTex}
+
+\begin{abstract}
+Resumen del artículo y sus resultados concretos.
+\end{abstract}
+
+
+\begin{IEEEkeywords}
+(Opcional) ejemplo: Reutilización automática de clases Java en aplicaciones empresariales.
+\end{IEEEkeywords}
+
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the conference you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals/conferences frown on
+% math in the abstract anyway.
+
+% no keywords
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introducción}
+\label{sec:introduccion}
+% "definition of topic plus background"
+
+Introducción al trabajo que se quiere presentar, citando las referencias del caso, como por ejemplo al libro de Clements y Northrop \cite{2001:SPL:501065}.
+
+
+\section{Conceptos preliminares}
+\label{sec:conceptosPrliminares}
+
+\section{Experiencias relacionadas con las líneas de productos de software}
+La investigación desde la ingeniería de líneas de productos en el contexto de la
+Pontificia Universidad Javeriana de Cali se enmarca en los dos procesos
+principales de la ingeniería de líneas de productos. Así, se han desarrollado
+trabajos desde la ingeniería de domino y se planean desarrollar algunas
+aproximaciones desde la ingeniería de aplicación. 
+
+A continuación se presentan los trabajos desarrollados y los trabajos por
+desarrollar relacionados con ambas áreas. 
+
+\subsection{Trabajos desarrollados}
+\label{subsec:trabajosDesarrollados}
+
+Las líneas de productos de software se expresan usando modelos. Estos modeloss
+experiencia de trabajo con las líneas de productos con anterior Los defectos semánticos son aquellas imperfecciones que afectan la capacidad del modelo de
+características para representar correctamente el dominio que desea representar
+\cite{Salinesi2012}.
+
+Desde la ingeniería de domino, en trabajos previos propusimos un método para
+detectar defectos semánticos en modelos de variabilidad, junto con las causas
+que los originan y las correcciones que podrían solucionar cada
+defecto\cite{Rincon2014}. Este método usa la programación por restricciones como
+herramienta para analizar los modelos de variabilidad software. De hecho la
+identificación de las causas y las correcciones se lleva a cabo por medio de la
+identificación de dos conceptos tomados de la programación por restricciones:
+los MCSes( \emph{Minimal Correction Subsets}) y MUSes (\emph{Minimal
+Unsatisfiable Subsets}).  Sin embargo, los resultados del análisis de los
+defectos de los modelos de varaibilidad se entregan en lenguaje natural. Esta
+separación permite que la programación por restricciones sea un mecanismo
+trasparente para el usuario final. De esta manera quienes diseñan los modelos de
+variabilidad pueden analizar con el método propuesto un modelo con el fin de
+identificar si éste tiene defectos semánticos. Si ese es el caso, los
+diseñadores pueden entonces analizar cada defecto para identificar (i) cuáles
+son la dependencias del modelo de variabilidad que originan el defecto, y (ii)
+cuáles dependencias deberían ser eliminadas del modelo para corregir el defecto.
+
+Más detalles sobre el método propuesto están
+disponibles en \cite{Rincon2014, Rincon2013a}. 
+
+\section{Trabajos a desarrollar}
+\label{sec:trabajosDesarrollar}
+
+\subsection{Generalizacion del método para identificar defectos }
+\label{subSec:generalizacionMetodo}
+Emplear MUSes y MCSes para identificar causas y correcciones de defectos le
+ofrece una base formal al método propuesto para analizar los defectos. Por esa
+razón,  dentro de la agenda de trabajo actual se planea generalizar la propuesta
+desarrollada par que ésta sea extensible a modelos de variabilidad representados
+en diferentes notaciones, como por ejemplo, OVM \textcolor{cita}, UML, Dopler.
+Actualmente el método puede analizar únicamente modelos de variabilidad
+representados con la notación de modelos de características. Así mismo, se
+espera evaluar el método considerando el usuario final, la utilidad de la
+solución, la escalabilildad
+
+
+\subsection{Adopción del paradigma de líneas de productos de software }
+\label{subSec:adopcionParadigma}
+
+\subsubsection{Configuración de productos}
+\label{subsubsec:configuracion}
+
+\subsubsection{Ensamblaje de componentes}
+\label{subsubsec:ensamblaje}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=7.6cm]{ejemplo.eps}
+\label{fig:ejemplo}
+\caption{Nota explicativa de la figura}
+\end{center}
+\end{figure}
+
+
+
+\subsection{Sub-secciones}
+\label{subsec:metamodel}
+
+Ejemplo de sub-sección.
+
+
+
+\section{Conclusiones}
+\label{sec:conclusiones}
+%
+Sección final que presenta un resumen del artículo y sus resultados concretos, analizados en una perspectiva más amplia, por ejemplo en cómo estos resultados pueden ser aplicados a otras aplicaciones o sectores.
+
+También podría incluir caminos de extensión o trabajo futuro.
+
+
+
+% conference papers do not normally have an appendix
+
+
+% use section* for acknowledgement
+\section*{Agradecimientos}
+
+Sección opcional para agradecimientos, por ejemplo fuentes de financiación, colaboración con empresas, universidades, etc.
+
+
+
+\bibliographystyle{./IEEEtran}
+\bibliography{IEEEabrv,references}
+
+
+\end{document}
+
+
