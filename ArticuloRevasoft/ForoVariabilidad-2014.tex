@@ -235,11 +235,12 @@ capacidad del modelo de caracter\'{i}sticas para representar de manera correcta 
 modelando \cite{Salinesi2012}. 
 
 El trabajo desarrollado anteriormente sobre líneas de productos de software 
-\cita{} se interesa en la calidad de los modelos de variabilidad.
+\cita{} se interesa en la calidad de los modelos de variabilidad. 
 Particularmente, en ese trabajo se propone un método que identifica
-defectos semánticos y sus correcciones en modelos de variabilidad. Para ello, 
-el método propuesto toma de la programación por restricciones el concepto de
-MCSes( \emph{Minimal Correction Subsets}) y lo aplica para identificar las correcciones
+defectos semánticos y sus correcciones en modelos de variabilidad representados
+con la notación de los modelos de características( en inglés \emph{Feature
+Models}). Para ello, el método propuesto toma de la programación por
+restricciones el concepto de MCSes( \emph{Minimal Correction Subsets}) y lo aplica para identificar las correcciones
 de los defectos semánticos identificados. El método se encarga de
 transformar los modelos de variabilidad en programas de restricciones sobre los
 cuales se identifican los MCSes, que son las correcciones de
@@ -263,15 +264,14 @@ líneas de productos que se llevarán en el corto y mediano plazo.
 
 \subsubsection{Generalizacion del método para identificar defectos}
 \label{subsubSec:generalizacionMetodo}
-Emplear MUSes y MCSes para identificar causas y correcciones de defectos le
-ofrece una base formal al método propuesto para analizar los defectos. Por esa
-razón,  dentro de la agenda de trabajo actual se planea generalizar la propuesta
+Emplear MCSes para identificar las correcciones de los defectos semánticos
+ofrece una base formal al método propuesto en \cite{Rincon2014} para analizar
+defectos semánticos. Por esa razón,  se planea generalizar la propuesta
 desarrollada par que ésta sea extensible a modelos de variabilidad representados
-en diferentes notaciones, como por ejemplo, OVM \textcolor{cita}, UML, Dopler.
-Actualmente el método puede analizar únicamente modelos de variabilidad
-representados con la notación de modelos de características. Así mismo, se
-espera evaluar el método considerando el usuario final, la utilidad de la
-solución, la escalabilildad
+notaciones, como por ejemplo, OVM \cite{Pohl:2005}, o Dopler \cite{Dhungana07}.
+Así mismo, se espera evaluar el método considerando criterios como la
+satisfación del usuario final, la utilidad de la solución, la escalabilildad,
+entre otros. 
 
 
 \subsubsection{Adopción del paradigma de líneas de productos de software }
