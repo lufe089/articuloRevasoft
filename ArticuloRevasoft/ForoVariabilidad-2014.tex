@@ -115,7 +115,8 @@
 
 
 \usepackage[spanish]{babel}
-\usepackage[latin1]{inputenc} \usepackage[activeacute, spanish]{babel}
+\usepackage[latin1]{inputenc} 
+\usepackage[activeacute, spanish]{babel}
 \usepackage{color}
 
 \usepackage{epstopdf}
@@ -235,7 +236,7 @@ capacidad del modelo de caracter\'{i}sticas para representar de manera correcta 
 modelando \cite{Salinesi2012}. 
 
 El trabajo desarrollado anteriormente sobre líneas de productos de software 
-\cita{} se interesa en la calidad de los modelos de variabilidad. 
+se interesa en la calidad de los modelos de variabilidad. 
 Particularmente, en ese trabajo se propone un método que identifica
 defectos semánticos y sus correcciones en modelos de variabilidad representados
 con la notación de los modelos de características( en inglés \emph{Feature
@@ -274,13 +275,26 @@ satisfación del usuario final, la utilidad de la solución, la escalabilildad,
 entre otros. 
 
 
-\subsubsection{Adopción del paradigma de líneas de productos de software }
-\label{subsubSec:adopcionParadigma}
+\subsection{Adopción del paradigma de líneas de productos de software }
+\label{subSec:adopcionParadigma}
+Con el fin de aplicar alguna de las metodologías propuesta para la adopción de líneas de productos de software en un dominio local, iniciamos un proyecto de investigación que nos permitirá, para un primer año, explorar y formular una línea de productos de software, donde se evaluarán diferentes dominios para seleccionar aquel sobre el cual se desarrollará la LPS. Se definirán los requerimientos y el modelo conceptual de la LPS, y el modelo de variabilidad que representa las relaciones de sus elementos así como las restricciones entre ellos. Se aplicarán métodos de verificación a los modelos de variabilidad para garantizar que éstos se encuentren libres de defectos semánticos. Finalmente, se expresarán los modelos de variabilidad en un lenguaje formal, que sirvan como entrada a un configurador. 
 
-\begin{itemize}
-\item \textbf{Configuración de productos}
-\item \textbf{Ensamblaje de componentes}
-\end{itemize}
+A partir de éste proyecto, desarrollaremos un trabajo más ambicioso, que permita en tres años \textit{Elaborar un conjunto de prácticas, artefactos y criterios genéricos (framework) que apoye la configuración guiada de productos y el ensamblaje de componentes en líneas de productos de software}. Estos aspectos, la configuración y el  ensamblaje de productos de software, son fundamentales en nuestros intereses de investigación.
+
+\subsubsection{Configuración de productos}
+\label{subsubSec:configuracion}
+En la ingeniería de líneas de productos el desarrollo de una línea de productos se divide en dos procesos: \textbf{la ingeniería de dominio} y la ingeniería de aplicación. En la ingeniería de dominio se analiza el área de aplicación en la que se desea crear la línea de productos, se define su alcance, se identifican los elementos comunes y variables que contendrá la línea de productos, y se diseñan y construyen los \textit{core assets}, que soportan la línea de productos \cite{Pohl,2005}. Por su parte, en la ingeniería de aplicación, los usuarios seleccionan características de la línea de productos a partir de las cuales se configuran y ensamblan productos que pertenecen a la línea de productos \cite{Pohl,2005}.  La idea básica de las líneas de productos es desarrollar core assets durante la ingeniería del dominio que luego permitan obtener productos individuales durante la ingeniería de aplicación \cite{Rabiser,2011}.
+ 
+Una \textbf{configuración} es una selección de elementos que deben satisfacer tanto los requerimientos del usuario como las restricciones del dominio de la línea de productos \cite{White,2010}. Por esta razón, configurar un producto de una línea de productos debe ser un proceso guiado paso a paso que debe permitir satisfacer a la vez las necesidades o ambiciones del usuario que realiza la configuración y las restricciones propias del dominio de la línea de productos \cite{Salinesi,2012}.  Además, el proceso de configuración debe satisfacer algunas características no funcionales como: tiempo de respuesta, independencia del orden de selección, adaptación al entorno cambiante, selección de características óptimas de acuerdo a los intereses del usuario, entre otras \cite{Mazo,2014}. Si en una configuración ninguno de sus elementos genera conflictos con otros elementos de la línea de productos, entonces la configuración es válida y representa los requerimientos de un producto que pertenece a la línea de productos, mientras que en caso contrario la configuración es inválida.  
+
+En este sentido, nuestra investigación busca definir técnicas de apoyo a la configuración y establecer la forma de recibir recibir los requerimientos de entrada de los usuarios, la información histórica y las restricciones relacionadas con el modelo de variabilidad. De igual forma, se desarrollará un sistema que permita a los usuarios configurar productos de la LPS y se definirán prácticas y criterios que deben seguirse en la línea de productos para facilitar la configuración guiada de los productos de software.
+
+
+\subsubsection{Ensamblaje de componentes}
+\label{subsubSec:ensamblaje}
+Una vez se configuran los productos de la línea de productos, es necesario establecer mecanismos para construir el producto de software configurado \cite{Deelstra,2005}. Este proceso, conocido como \textbf{ensamblaje}, consiste en tomar core assets de manera que minimizando el esfuerzo necesario para obtener cada producto en particular, sea posible obtener productos finales de la línea de productos \cite{Clements,2001}.
+
+De esta forma, en nuestro proyecto de investigación, definiremos criterios y prácticas para la elaboración de artefactos reutilizables que puedan ser ensamblados de manera automática o semiautomática para generar productos que hagan parte de una LPS. Adicionalmente, se propondrán criterios para la definición de la arquitectura de líneas de productos de software de referencia y para la selección de las tecnologías con la que se implementarán los componentes reutilizables. Por último, se definirán prácticas y criterios para el ensamblaje de los componentes de software reutilizables y se implementarán estrategias para relacionar las elecciones hechas por el usuario en la configuración con los componentes reutilizables, de modo que éstos se puedan ensamblar con el fin de obtener el producto configurado. 
 
 \begin{figure}[h!]
 \begin{center}
