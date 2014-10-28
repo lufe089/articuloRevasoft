@@ -114,11 +114,9 @@
 \hyphenation{op-tical net-works}
 
 
-\usepackage[spanish]{babel}
+
 \usepackage[latin1]{inputenc} 
 \usepackage[activeacute, spanish]{babel}
-\usepackage{color}
-
 \usepackage{epstopdf}
 \usepackage{epsfig}
 
@@ -129,8 +127,8 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{Líneas de productos de software. Experiencias en la Pontificia
-Universidad Javeriana de Cali}
+\title{Líneas de productos de software. Perspectivas de investigación
+en la Pontificia Universidad Javeriana de Cali}
 
 
 % author names and affiliations
@@ -146,13 +144,13 @@ Universidad Javeriana de Cali}
 % of the page, use this alternative format:
 % 
 \author{\IEEEauthorblockN{
-Nombre1 Apellido1\IEEEauthorrefmark{1}\IEEEauthorrefmark{2},
+Nombre1 Apellido1\IEEEauthorrefmark{1},
 Nombre2 Apellido2\IEEEauthorrefmark{1},
-Nombre3 Apellido3\IEEEauthorrefmark{2}}
-\IEEEauthorblockA{\IEEEauthorrefmark{1}Facultad de Ingeniería, Universidad Universidad1, Ciudad, País.\\
-Email: \{email1,email2\}@universidad1.edu.co}
-\IEEEauthorblockA{\IEEEauthorrefmark{2}Facultad de Ingeniería, Universidad Universidad2, Ciudad, País.\\
-Email: email3@universidad2.edu.co}}
+Nombre3 Apellido3\IEEEauthorrefmark{1}}
+
+\IEEEauthorblockA{\IEEEauthorrefmark{1}Departamento de Electr\'{o}nica y
+Ciencias de la Computaci\'{o}n,\\
+Pontificia Universidad Javeriana, Cali, Colombia\\}}
 
 
 
@@ -168,7 +166,8 @@ Resumen del artículo y sus resultados concretos.
 
 
 \begin{IEEEkeywords}
-(Opcional) ejemplo: Reutilización automática de clases Java en aplicaciones empresariales.
+Líneas de productos de software, defectos, modelos de variabilidad,
+configuración, ensamblaje
 \end{IEEEkeywords}
 
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
@@ -196,29 +195,25 @@ Resumen del artículo y sus resultados concretos.
 \label{sec:introduccion}
 % "definition of topic plus background"
 
-Introducción al trabajo que se quiere presentar, citando las referencias del caso, como por ejemplo al libro de Clements y Northrop \cite{2001:SPL:501065}.
 
-
-\section{Conceptos preliminares}
-\label{sec:conceptosPrliminares}
  
 
 \section{Experiencias relacionadas con líneas de productos de software}
 Las líneas de productos de software han sido interés del equipo de profesores
-que pertenecen al grupo de investigación Destino, pues consideramos que éste es
+que pertenecen al grupo de investigación Destino, pues este es
 un tema con aplicabilidad en la investigación teórica, a la vez que ofrece
 posibilidades de aplicar los conceptos desde un punto de vista práctico en la
 industria de desarrollo de software de la región y el país.
 
-En particular, nuestro interés está enfocado en dos líneas de trabajo: la
+En particular, el interés está enfocado en dos líneas de trabajo: la
 calidad de los modelos de variabilidad y la adopción del paradigma de líneas de productos de
 software con casos de aplicación reales. 
 
-A continuación se presentan en detalle ambas líneas de trabajo. 
+A continuación se detallan ambas líneas de trabajo. 
 
 \subsection{Calidad de los modelos de variabilidad. ¿Cómo
-identificar de una manera genérica defectos, sus causas y correcciones en los
-modelos de variabilidad ?}
+identificar de una manera genérica los defectos, sus causas y correcciones en
+los modelos de variabilidad?}
 \label{subSec:generalizacionMetodo}
 
 Las líneas de productos de software se representan por medio de modelos de
@@ -246,27 +241,27 @@ programación por restricciones el concepto de MCSes( \emph{Minimal Correction
 Subsets}) y lo aplica para identificar las correcciones de los defectos
 semánticos identificados. Especificamente, los MCSes corresponden a las
 dependencias que deben ser eliminadas de los modelos de variabilidad para
-solucionar al menos un defecto.  Antes de entregar los resultados al usuario
-final, el método transforma a lenguaje natural las correcciones identificadas
-para cada defecto.
-De esta manera se obtienen en un lenguaje facilmente entendible por quienes
-diseñan los modelos de variabilidad, los defectos semánticos de los modelo de
-variabilidad y las correcciones para cada defecto.
+solucionar al menos un defecto. 
 
-Emplear MCSes para identificar las correcciones de los defectos semánticos en
-modelos de características es importante cuando éste es la notación empleada
-para modelar las líneas de productos. Sin embargo, los modelos de variabilidad
-pueden ser expresados en otras notaciones como por
-ejemplo, OVM \cite{Pohl:2005}, o Dopler \cite{Dhungana07}, que aún no son
-consideradas por lo propuesto por Rincón \emph{et al.} \cite{Rincon2014, Rincon2013a}.
-Así mismo, la evaluación llevada a cabo no considera sobre las correcciones
-identificadas aspectos como la satisfación del usuario final, la utilidad de la solución, la escalabilildad, entre otros.
+Antes de entregar los resultados al usuario final, el método transforma a
+lenguaje natural las correcciones identificadas para cada defecto. De esta
+manera se obtienen los defectos semánticos de los modelo de variabilidad y las
+correcciones para cada defecto en un lenguaje facilmente entendible por quienes
+diseñan los modelos.
 
-Con el fin de generalizar las alternativas antes
-propuestas para que sean aplicables a otras notaciones y llevar acabo una
-evaluación más profunda una de las líneas de trabajo se orientará hacia el
-objetivo de generalizar para modelos de variabilidad  la identificación de
-defectos y sus correcciones\ldots\ldots..
+Emplear MCSes para identificar correcciones de defectos semánticos en modelos de
+características es importante cuando ésta es la notación empleada para modelar
+las líneas de productos. Sin embargo, los modelos de variabilidad pueden ser
+expresados en otras notaciones como OVM \cite{Pohl:2005}, o Dopler
+\cite{Dhungana07}, que no son consideradas en el trabajo de Rincón \emph{et
+al.} \cite{Rincon2014, Rincon2013a}.
+Así mismo, es necesario evaluar el método propuesto considerando aspectos como
+la satisfación del usuario final, la utilidad de la solución, la escalabilildad, entre otros.
+
+La línea de trabajo orientada hacia la calidad de los modelos de variabilidad
+busca considerar estos aspectos con el fin de generalizar el método propuesto
+por Rincón \emph{et al.} \cite{Rincon2014, Rincon2013a} para la identificación
+de defectos, causas y sus correcciones.
 
 \subsection{Adopción del paradigma de líneas de productos de software }
 \label{subSec:adopcionParadigma}
@@ -297,25 +292,25 @@ aplicación. En la ingeniería de dominio se analiza el área de aplicación en la
 que se desea crear la línea de productos, se define su alcance, se identifican
 los elementos comunes y variables que contendrá la línea de productos, y se
 diseñan y construyen los \textit{core assets}, que soportan la línea de
-productos \cite{Pohl,2005}. Por su parte, en la ingeniería de aplicación, los
+productos \cite{Pohl:2005}. Por su parte, en la ingeniería de aplicación, los
 usuarios seleccionan características de la línea de productos a partir de las
 cuales se configuran y ensamblan productos que pertenecen a la línea de
-productos \cite{Pohl,2005}.  La idea básica de las líneas de productos es
+productos \cite{Pohl:2005}.  La idea básica de las líneas de productos es
 desarrollar core assets durante la ingeniería del dominio que luego permitan
 obtener productos individuales durante la ingeniería de aplicación
-\cite{Rabiser,2011}.
+\cite{Rabiser2011}.
  
 Una \textbf{configuración} es una selección de elementos que deben satisfacer
 tanto los requerimientos del usuario como las restricciones del dominio de la
-línea de productos \cite{White,2010}. Por esta razón, configurar un producto de
+línea de productos \cite{White2010}. Por esta razón, configurar un producto de
 una línea de productos debe ser un proceso guiado paso a paso que debe permitir
 satisfacer a la vez las necesidades o ambiciones del usuario que realiza la
 configuración y las restricciones propias del dominio de la línea de productos
-\cite{Salinesi,2012}.  Además, el proceso de configuración debe satisfacer
+\cite{Salinesi2012}.  Además, el proceso de configuración debe satisfacer
 algunas características no funcionales como: tiempo de respuesta, independencia
 del orden de selección, adaptación al entorno cambiante, selección de
 características óptimas de acuerdo a los intereses del usuario, entre otras
-\cite{Mazo,2014}. Si en una configuración ninguno de sus elementos genera
+\cite{Mazo2014}. Si en una configuración ninguno de sus elementos genera
 conflictos con otros elementos de la línea de productos, entonces la
 configuración es válida y representa los requerimientos de un producto que
 pertenece a la línea de productos, mientras que en caso contrario la
@@ -334,10 +329,10 @@ la configuración guiada de los productos de software.
 \label{subsubSec:ensamblaje}
 Una vez se configuran los productos de la línea de productos, es necesario
 establecer mecanismos para construir el producto de software configurado
-\cite{Deelstra,2005}. Este proceso, conocido como \textbf{ensamblaje}, consiste
+\cite{Deelstra2005}. Este proceso, conocido como \textbf{ensamblaje}, consiste
 en tomar core assets de manera que minimizando el esfuerzo necesario para
 obtener cada producto en particular, sea posible obtener productos finales de la
-línea de productos \cite{Clements,2001}.
+línea de productos \cite{Clements2001}.
 
 De esta forma, en nuestro proyecto de investigación, definiremos criterios y
 prácticas para la elaboración de artefactos reutilizables que puedan ser
