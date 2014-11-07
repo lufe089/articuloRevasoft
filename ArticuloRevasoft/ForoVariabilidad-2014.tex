@@ -1,40 +1,33 @@
-% !TeX spellcheck = es-CO 
-%%
-%% This is a skeleton file demonstrating the use of IEEEtran.cls
-%% (requires IEEEtran.cls version 1.7 or later) with an IEEE conference paper.
-%%
-%% Support sites:
-%% http://www.michaelshell.org/tex/ieeetran/
-%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
-%% and
-%% http://www.ieee.org/
+% !TeX spellcheck = es-CO % % This is a skeleton file demonstrating the use of
+% IEEEtran.cls % (requires IEEEtran.cls version 1.7 or later) with an IEEE
+% conference paper.
+% % % Support sites:
+% % http://www.michaelshell.org/tex/ieeetran/ %
+% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/ % and %
+% http://www.ieee.org/
 
-%%*************************************************************************
-%% Legal Notice:
-%% This code is offered as-is without any warranty either expressed or
-%% implied; without even the implied warranty of MERCHANTABILITY or
-%% FITNESS FOR A PARTICULAR PURPOSE! 
-%% User assumes all risk.
-%% In no event shall IEEE or any contributor to this code be liable for
-%% any damages or losses, including, but not limited to, incidental,
-%% consequential, or any other damages, resulting from the use or misuse
-%% of any information contained here.
-%%
-%% All comments are the opinions of their respective authors and are not
-%% necessarily endorsed by the IEEE.
-%%
-%% This work is distributed under the LaTeX Project Public License (LPPL)
-%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
-%% distributed and modified. A copy of the LPPL, version 1.3, is included
-%% in the base LaTeX documentation of all distributions of LaTeX released
-%% 2003/12/01 or later.
-%% Retain all contribution notices and credits.
-%% ** Modified files should be clearly indicated as such, including  **
-%% ** renaming them and changing author support contact information. **
-%%
-%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
-%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
-%%*************************************************************************
+% %************************************************************************* %
+% Legal Notice:
+% % This code is offered as-is without any warranty either expressed or %
+% implied; without even the implied warranty of MERCHANTABILITY or % FITNESS FOR
+% A PARTICULAR PURPOSE! % User assumes all risk.
+% % In no event shall IEEE or any contributor to this code be liable for % any
+% damages or losses, including, but not limited to, incidental, % consequential,
+% or any other damages, resulting from the use or misuse % of any information
+% contained here.
+% % % All comments are the opinions of their respective authors and are not %
+% necessarily endorsed by the IEEE.
+% % % This work is distributed under the LaTeX Project Public License (LPPL) % (
+% http://www.latex-project.org/ ) version 1.3, and may be freely used, %
+% distributed and modified. A copy of the LPPL, version 1.3, is included % in
+% the base LaTeX documentation of all distributions of LaTeX released %
+% 2003/12/01 or later.
+% % Retain all contribution notices and credits.
+% % ** Modified files should be clearly indicated as such, including  ** % **
+% renaming them and changing author support contact information. ** % % File
+% list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex, %
+%     bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
+% %*************************************************************************
 
 % *** Authors should verify (and, if needed, correct) their LaTeX system  ***
 % *** with the testflow diagnostic prior to trusting their LaTeX platform ***
@@ -51,62 +44,52 @@
 
 
 % *** GRAPHICS RELATED PACKAGES ***
-%
 \ifCLASSINFOpdf
-%   \usepackage[pdftex]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+% \usepackage[pdftex]{graphicx}
+% declare the path(s) where your graphic files are
+% \graphicspath{{../pdf/}{../jpeg/}} and their extensions so you won't have to
+% specify these with every instance of \includegraphics
+% \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \else
-  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
-  % will default to the driver specified in the system graphics.cfg if no
-  % driver is specified.
-  % \usepackage[dvips]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
+% or other class option (dvipsone, dvipdf, if not using dvips). graphicx will
+% default to the driver specified in the system graphics.cfg if no driver is
+% specified.
+% \usepackage[dvips]{graphicx} declare the path(s) where your graphic files
+% are \graphicspath{{../eps/}} and their extensions so you won't have to
+% specify these with every instance of \includegraphics
+% \DeclareGraphicsExtensions{.eps}
 \fi
-% graphicx was written by David Carlisle and Sebastian Rahtz. It is
-% required if you want graphics, photos, etc. graphicx.sty is already
-% installed on most LaTeX systems. The latest version and documentation can
-% be obtained at: 
-% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
-% Another good source of documentation is "Using Imported Graphics in
-% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
-% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
-%
-% latex, and pdflatex in dvi mode, support graphics in encapsulated
-% postscript (.eps) format. pdflatex in pdf mode supports graphics
-% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
-% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
-% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
-% which can result in "jaggedy"/blurry rendering of lines and letters as
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is required if
+% you want graphics, photos, etc. graphicx.sty is already installed on most
+% LaTeX systems. The latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/ Another good
+% source of documentation is "Using Imported Graphics in LaTeX2e" by Keith
+% Reckdahl which can be found as epslatex.ps or epslatex.pdf at:
+% http://www.ctan.org/tex-archive/info/  latex, and pdflatex in dvi mode,
+% support graphics in encapsulated postscript (.eps) format. pdflatex in pdf
+% mode supports graphics in .pdf, .jpeg, .png and .mps (metapost) formats. Users
+% should ensure that all non-photo figures use a vector format (.eps, .pdf,
+% .mps) and not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped
+% formats which can result in "jaggedy"/blurry rendering of lines and letters as
 % well as large increases in file sizes.
-%
-% You can find documentation about the pdfTeX application at:
+%  You can find documentation about the pdfTeX application at:
 % http://www.tug.org/applications/pdftex
 
 
 
 \usepackage[font=footnotesize]{subfig}
-% subfig.sty, also written by Steven Douglas Cochran, is the modern
-% replacement for subfigure.sty. However, subfig.sty requires and
-% automatically loads Axel Sommerfeldt's caption.sty which will override
-% IEEEtran.cls handling of captions and this will result in nonIEEE style
-% figure/table captions. To prevent this problem, be sure and preload
-% caption.sty with its "caption=false" package option. This is will preserve
-% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later 
-% (recommended due to many improvements over 1.2) of subfig.sty supports
-% the caption=false option directly:
-%\usepackage[caption=false,font=footnotesize]{subfig}
-%
-% The latest version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
-% The latest version and documentation of caption.sty can be obtained at:
+% subfig.sty, also written by Steven Douglas Cochran, is the modern replacement
+% for subfigure.sty. However, subfig.sty requires and automatically loads Axel
+% Sommerfeldt's caption.sty which will override IEEEtran.cls handling of
+% captions and this will result in nonIEEE style figure/table captions. To
+% prevent this problem, be sure and preload caption.sty with its "caption=false"
+% package option. This is will preserve IEEEtran.cls handing of captions.
+% Version 1.3 (2005/06/28) and later (recommended due to many improvements over
+% 1.2) of subfig.sty supports the caption=false option directly:
+% \usepackage[caption=false,font=footnotesize]{subfig}  The latest version and
+% documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/ The latest
+% version and documentation of caption.sty can be obtained at:
 % http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
 
 
@@ -115,8 +98,7 @@
 
 
 
-\usepackage[latin1]{inputenc} 
-\usepackage[activeacute, spanish]{babel}
+\usepackage[latin1]{inputenc} \usepackage[activeacute, spanish]{babel}
 \usepackage{epstopdf}
 \usepackage{epsfig}
 
@@ -124,33 +106,28 @@
 
 
 \begin{document}
-%
-% paper title
-% can use linebreaks \\ within to get better formatting as desired
-\title{Líneas de productos de software. Perspectivas de investigación
-en la Pontificia Universidad Javeriana de Cali}
+%  paper title can use linebreaks \\ within to get better formatting as desired
+\title{Estado Actual y Perspectivas de la Investigación en Líneas de Productos de Software en la Pontificia Universidad Javeriana de Cali}
 
 
-% author names and affiliations
-% use a multiple column layout for up to three different
-% affiliations
+% author names and affiliations use a multiple column layout for up to three
+% different affiliations
 
-% conference papers do not typically use \thanks and this command
-% is locked out in conference mode. If really needed, such as for
-% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
-% after \documentclass
+% conference papers do not typically use \thanks and this command is locked out
+% in conference mode. If really needed, such as for the acknowledgment of
+% grants, issue a \IEEEoverridecommandlockouts after \documentclass
 
-% for over three affiliations, or if they all won't fit within the width
-% of the page, use this alternative format:
-% 
-\author{\IEEEauthorblockN{
-Nombre1 Apellido1\IEEEauthorrefmark{1},
-Nombre2 Apellido2\IEEEauthorrefmark{1},
-Nombre3 Apellido3\IEEEauthorrefmark{1}}
+% for over three affiliations, or if they all won't fit within the width of the
+% page, use this alternative format:
+\author{\IEEEauthorblockN{ Luisa Rinc\'{o}n\IEEEauthorrefmark{1}, Juan-Carlos
+Martinez-Arias\IEEEauthorrefmark{1}, Gloria In\'{e}s
+Alvarez\IEEEauthorrefmark{1}, Mar\'{i}a-Constanza
+Pab\'{o}n\IEEEauthorrefmark{1}}
 
 \IEEEauthorblockA{\IEEEauthorrefmark{1}Departamento de Electr\'{o}nica y
 Ciencias de la Computaci\'{o}n,\\
-Pontificia Universidad Javeriana, Cali, Colombia\\}}
+Pontificia Universidad Javeriana, Cali, Colombia\\
+Email: \{lfrincon,juancmartinez,galvarez,mcpabon\}@javerianacali.edu.co}}
 
 
 
@@ -158,10 +135,33 @@ Pontificia Universidad Javeriana, Cali, Colombia\\}}
 % make the title area
 \maketitle
 
-%{Review IEEE compliant \& create bibTex}
+% {Review IEEE compliant \& create bibTex}
 
 \begin{abstract}
-Resumen del artículo y sus resultados concretos.
+Gestionar la variabilidad y la reutilización ha sido un tema de interés en la
+industria de software desde los orígenes de la ingeniería de software. Como
+respuesta a esa necesidad, las líneas de productos de software surgieron 
+como un paradigma de producción que considera ambos aspectos. 
+Sin embargo, el desarrollo de una l\'{i}nea de productos trae consigo diferentes
+desafíos relacionados por ejemplo con el modelado del dominio de la línea
+de productos, la configuración de los productos que podrían derivarse de la línea de productos 
+y el ensamblaje de los artefactos de software necesarios para obtener productos
+de software funcionales. Por ello, las líneas de productos de software son aún
+un campo abierto de investigación de gran interés para la academia y con
+aplicabilidad para la industria.
+En este artículo se presentan las líneas de investigación actuales en el grupo
+de investigación Destino relacionadas con la gestión de la variabilidad y la
+reutilización de software. Especificamente se presenta las línea de
+investigación orientadas en (i) faciliar el modelado riguroso de las
+líneas de productos, y (ii) facilitar los procesos de configuración y
+ensamblaje de productos en las línea de productos de software, apoyados en
+herramienta computacionales.
+Finalmente, se presenta la intención del grupo de construir
+colaboraciones con empresas del sector de software que estén
+interesadas en aportar algún dominio en el que se puedan emplear las
+líneas de productos de software. De esta manera se podría aplicar
+la investigación desarrollada en casos reales, y transferir a las empresas los desarrollos actuales en el tema.
+
 \end{abstract}
 
 
@@ -193,65 +193,118 @@ configuración, ensamblaje
 
 \section{Introducción}
 \label{sec:introduccion}
-% "definition of topic plus background"
+En la industria de software, la mayor'{i}a de las empresas desarrollan productos
+para satisfacer necesidades en unos pocos dominios de aplicaci\'{o}n y por
+consiguiente, sus productos de software tienen
+caracter\'{i}sticas y elementos comunes. Las pr\'{a}cticas de
+reutilizaci\'{o}n de componentes pueden acortar los tiempos de desarrollo de
+estos productos y mejorar la competitividad de las empresas. Sin embargo, para
+que la reutilizaci\'{o}n sea efectiva se requieren metodolog\'{i}as que,
+apoyadas en la tecnolog\'{i}a, ayuden a administrar los procesos de
+reutilizaci\'{o}n durante el ciclo de desarrollo de los productos.
 
+Las L\'{i}neas de Productos de Software (LPS) son un paradigma de producci\'{o}n
+que permite desarrollar y administrar, de manera eficiente, productos que tienen
+elementos comunes y variables. As\'{i}, a trav\'{e}s de la reutilizaci\'{o}n de
+elementos las LPS ofrecen beneficios como menores tiempos de desarrollo, menores
+costos, mayor calidad y la flexibilidad para ofrecer a los usuarios productos
+que se ajusten a sus necesidades \cite{Pohl:2005}.
 
- 
+El desarrollo de una línea de productos se divide en dos procesos: la
+\textbf{ingeniería de dominio} y la \textbf{ingeniería de aplicación}. En la
+ingeniería de dominio se analiza el área de aplicación en la que se desea crear
+la línea de productos de software, se identifican los elementos comunes y
+variables de dicha línea, se modela el dominio de la línea de productos por
+medio de modelos, y se diseñan y construyen los artefactos reutilizables
+(\textit{core assets}) que la soportan \cite{Pohl:2005}.
+Por su parte, en la ingeniería de aplicación, los usuarios seleccionan de la
+línea de productos las características que cumplan con sus requerimientos, para
+a partir de esta selección ensamblar artefactos previamente construidos y
+reutilizables que materialicen en productos de software las características
+requeridas por los clientes \cite{Pohl:2005}.
+El propósito de las líneas de productos de software es
+desarrollar artefactos durante la ingeniería del dominio que luego permitan
+obtener productos individuales durante la ingeniería de aplicación
+\cite{Rabiser2011}.
 
-\section{Experiencias relacionadas con líneas de productos de software}
-Las líneas de productos de software (LPS) han sido interés del equipo de
-profesores que pertenecen al grupo de investigación Destino, pues este es
-un tema con aplicabilidad en la investigación teórica, a la vez que ofrece
-posibilidades de aplicar los conceptos desde un punto de vista práctico en la
-industria de desarrollo de software de la región y el país.
+El desarrollo de l\'{i}neas de productos puede ser complejo en
+varios sentidos: primero, los modelos que representan el dominio de las líneas
+de productos ( modelos de de variabilidad) pueden incluir un gran n\'{u}mero de
+caracter\'{i}sticas y restricciones, por ello son susceptibles de incluir defectos. 
+Adem\'{a}s, la cantidad de opciones de configuraci\'{o}n puede ser tan grande que no sea posible hacer una lista que
+incluya todas las posibilidades, por lo tanto se hace necesario guiar las
+decisiones que se toman durante el proceso de configuraci\'{o}n. Finalmente, el 
+ensamblaje puede incluir elementos implementados con m\'{u}ltiples herramientas
+y bajo diversos paradigmas, lo cual hace necesario que el proceso de desarrollo
+siga una estrategia para elaborar artefactos de software que se puedan ensamblar
+para obtener productos de la línea de productos. Estos desafíos implican la
+necesidad de desarrollar metodolog\'{i}as y herramientas que den soluci\'{o}n
+a estas y otras dificultades.
 
-En particular, el interés está enfocado en dos líneas de trabajo: la
-calidad de los modelos de variabilidad y la adopción del paradigma de líneas de productos de
-software con casos de aplicación reales. 
+El Grupo de Investigaci\'{o}n Destino de la Pontificia Universidad Javeriana
+est\'{a} incursionando en el \'{a}rea de L\'{i}neas de Producto de Software a
+trav\'{e}s de dos l\'{i}neas de trabajo que se enfocan en aportar soluciones a
+los desafíos antes mencionados. Nuestro objetivo es contribuir al
+desarrollo del paradigma LPS, de manera que pueda ser efectiva y ampliamente adoptado en la
+industria del software a nivel nacional y regional. Este
+art\'{i}culo presenta los retos y perspectivas planteados para los proyectos que
+se est\'{a}n desarrollando en dichas l\'{i}neas.
 
-A continuación se detallan ambas líneas de trabajo. 
+\section{Líneas de investigación en LPS en el Grupo Destino}
+La producción intensiva de software requiere del uso de herramientas
+conceptuales y de artefactos que permitan garantizar la calidad, al tiempo que
+se acelera el proceso de construcción de aplicaciones. La gestión de la
+variabilidad está en el corazón de este propósito y es por ese motivo que en la
+Pontificia Universidad Javeriana se viene consolidando una línea de
+investigación en esta temática.
+
+Nuestros intereses de investigación actuales en el tema de líneas
+de productos de software son dos: aportar en el área de modelado, investigando
+sobre métodos para garantizar la calidad de los modelos de variabilidad a través
+de la detección de errores semánticos y su corrección; y la adopción del
+paradigma de líneas de productos de software con casos de aplicación reales.  A
+continuación se detallan ambas líneas de trabajo.
 
 \subsection{Calidad de los modelos de variabilidad. ¿Cómo
 identificar de una manera genérica los defectos, sus causas y correcciones en
 los modelos de variabilidad?}
 \label{subSec:generalizacionMetodo}
 
-Las líneas de productos de software se representan por medio de modelos de
-variabilidad, pues éstos sirven como un punto de comunicaci\'{o}n intermedia
+El dominio de aplicación de una línea de productos de software se representa por medio de un modelo de
+variabilidad, que además sirve como un punto de comunicaci\'{o}n
 entre los usuarios finales y los desarrolladores de la LPS \cite{Kang1990}.
-Estos modelos permiten identificar por ejemplo, cu\'{a}les caracter\'{i}sticas son comunes a todos
+Este modelo permite identificar por ejemplo, cu\'{a}les caracter\'{i}sticas son comunes a todos
 los productos de la línea de productos, cu\'{a}les caracter\'{i}sticas son
 variables; cu\'{a}les caracter\'{i}sticas deben ir juntas en todos los productos y cu\'{a}les
 caracter\'{i}sticas no pueden ir al mismo tiempo en un producto \cite{Kang1990}.
 
-Los modelos de variabilidad se dise{\~n}an en una de las primeras etapas del
-desarrollo de la línea de productos y son un insumo importante para el resto del
+El modelo de variabilidad se dise{\~n}a en una de las primeras etapas del
+desarrollo de la línea de productos y es un insumo importante para el resto del
 proceso de la ingeniería de línea de productos. Sin embargo, a medida que
-aumenta la complejidad de los modelos de variabilidad, es posible que quienes
-los elaboran introduzcan en ellos sin intención defectos semánticos. Los
+aumenta la complejidad del modelo de variabilidad, es posible que quienes
+lo elaboran introduzcan en él, sin intención, defectos semánticos. Los
 defectos sem\'{a}nticos son imperfecciones que afectan la capacidad del modelo
 de variabilidad para expresar de manera correcta el dominio que representa la
 línea de productos \cite{Salinesi2012}.
 
-Rincón \emph{et al.} \cite{Rincon2014, Rincon2013a} proponen
-un método que identifica defectos semánticos y sus correcciones en modelos de
+Rinc\'{o}n \emph{et al.} \cite{Rincon2014, Rincon2013a} proponen, para modelos de
 variabilidad representados con la notación de los modelos de características (en
-inglés \emph{Feature Models}\cite{Kang1990}). Para ello, el trabajo toma de la
-programación por restricciones el concepto de MCSes( \emph{Minimal Correction
-Subsets}) y lo aplica para identificar las correcciones de los defectos
-semánticos identificados. Especificamente, los MCSes corresponden a las
+inglés \emph{Feature Models}\cite{Kang1990}),
+un método que identifica defectos semánticos y sugiere correcciones. Para ello, toman de la
+programación por restricciones el concepto de MCSes (\emph{Minimal Correction
+Subsets}) y lo aplican para identificar las correcciones de los defectos
+semánticos encontrados. Espec\'{i}ficamente, los MCSes corresponden a las
 dependencias que deben ser eliminadas de los modelos de variabilidad para
-solucionar al menos un defecto. 
+solucionar al menos un defecto.
 
-Antes de entregar los resultados al usuario final, el método transforma a
+Antes de entregar los resultados al usuario final, el método traduce a
 lenguaje natural las correcciones identificadas para cada defecto. De esta
 manera se obtienen los defectos semánticos de los modelo de variabilidad y las
-correcciones para cada defecto en un lenguaje facilmente entendible por quienes
+correcciones para cada defecto en un lenguaje f\'{a}cilmente entendible por quienes
 diseñan los modelos.
 
-Emplear MCSes para identificar correcciones de defectos semánticos en modelos de
-características es importante cuando ésta es la notación empleada para modelar
-las líneas de productos. Sin embargo, los modelos de variabilidad pueden ser
+Los MCSes se han usado para identificar correcciones de defectos semánticos en modelos de
+características. Sin embargo, los modelos de variabilidad pueden ser
 expresados en otras notaciones como OVM \cite{Pohl:2005}, o Dopler
 \cite{Dhungana07}, que no son consideradas en el trabajo de Rincón \emph{et
 al.} \cite{Rincon2014, Rincon2013a}.
@@ -262,129 +315,145 @@ busca considerar estos aspectos con el fin de generalizar el método propuesto
 por Rincón \emph{et al.} \cite{Rincon2014, Rincon2013a} para la identificación
 de defectos, causas y sus correcciones.
 
-\subsection{Adopción del paradigma de líneas de productos de software }
+\subsection{Adopción del paradigma de líneas de productos de software. ¿Cómo apoyar el proceso de configuración y ensamblaje de productos de software para facilitar la transferencia de esta tecnología a la industria? }
 \label{subSec:adopcionParadigma}
-Con el fin de aplicar alguna de las metodologías propuesta para la adopción de
-líneas de productos de software en un dominio local, iniciamos un proyecto de
-investigación que nos permitirá, para un primer año, explorar y formular una
-línea de productos de software, donde se evaluarán diferentes dominios para
-seleccionar aquel sobre el cual se desarrollará la LPS. Se definirán los
-requerimientos y el modelo conceptual de la LPS, y el modelo de variabilidad que
-representa las relaciones de sus elementos así como las restricciones entre
-ellos. Se aplicarán métodos de verificación a los modelos de variabilidad para
-garantizar que éstos se encuentren libres de defectos semánticos. Finalmente, se
-expresarán los modelos de variabilidad en un lenguaje formal, que sirvan como
-entrada a un configurador.
 
-A partir de éste proyecto, desarrollaremos un trabajo más ambicioso, que permita
-en tres años \textit{Elaborar un conjunto de prácticas, artefactos y criterios
-genéricos (framework) que apoye la configuración guiada de productos y el
-ensamblaje de componentes en líneas de productos de software}. Estos aspectos,
+Los avances que se van haciendo en el aspecto teórico de las líneas de productos
+de software, deben validarse en casos concretos de utilización que hagan
+evidentes las fortalezas y debilidades de las teorías propuestas.
+Con este propósito en mente, se está iniciando una línea de trabajo que apunta
+al desarrollo de herramientas computacionales de apoyo a los procesos de
+configuración y ensamblaje, que permitan la construcción de líneas de producto
+concretas para algunos dominios utilizados como casos de estudio.
+Esta línea de investigación tiene como tareas concretas: la definición de buenas
+prácticas para la representación y depuración de los modelos de variabilidad, y
+el desarrollo de elementos que faciliten los procesos de configuración y
+ensamblaje de productos apoyados en herramientas computacionales.
+
+La tarea relacionada con la definición de buenas prácticas para el modelado de
+dominios inicia con la representación de dominios particulares e incluye las
+siguientes actividades:  la evaluación de diferentes dominios para seleccionar
+algunos sobre los cuales desarrollar LPS; la definición de  los requerimientos
+de las líneas de productos; la definición  del modelo conceptual de la LPS y el
+modelo de variabilidad; la aplicación de métodos de verificación a los modelos
+de variabilidad; y finalmente, la representación del  modelo de variabilidad en
+un lenguaje formal, que sirva como insumo para el proceso de configuración. A la
+par que se llevan a cabo estas etapas de modelado, se ponen a prueba las
+notaciones, las herramientas y las representaciones, con el fin de deducir
+buenas prácticas de modelado.
+
+En la tarea relacionada con el desarrollo de elementos de apoyo,
+se ha definido un proyecto para elaborar un conjunto de prácticas, artefactos y
+criterios genéricos (framework) que apoye la configuración guiada de productos y
+el ensamblaje de componentes en líneas de productos de software. Estos aspectos,
 la configuración y el  ensamblaje de productos de software, son fundamentales en
-nuestros intereses de investigación.
+nuestros intereses de investigación por lo que se explican más detalladamente a
+continuación.
+
 
 \subsubsection{Configuración de productos}
 \label{subsubSec:configuracion}
-En la ingeniería de líneas de productos el desarrollo de una línea de productos
-se divide en dos procesos: la \textbf{ingeniería de dominio} y la
-\textbf{ingeniería de aplicación}. En la ingeniería de dominio se analiza el
-área de aplicación en la que se desea crear la línea de productos, se define su alcance, se identifican
-los elementos comunes y variables que contendrá la línea de productos, y se
-diseñan y construyen los \textit{core assets}, que soportan la línea de
-productos \cite{Pohl:2005}. Por su parte, en la ingeniería de aplicación, los
-usuarios seleccionan características de la línea de productos a partir de las
-cuales se configuran y ensamblan productos que pertenecen a la línea de
-productos \cite{Pohl:2005}.  La idea básica de las líneas de productos es
-desarrollar core assets durante la ingeniería del dominio que luego permitan
-obtener productos individuales durante la ingeniería de aplicación
-\cite{Rabiser2011}.
- 
+
 Una \textbf{configuración} es una selección de elementos que deben satisfacer
 tanto los requerimientos del usuario como las restricciones del dominio de la
 línea de productos \cite{White2010}. Por esta razón, configurar un producto de
-una línea de productos debe ser un proceso guiado paso a paso que debe permitir
-satisfacer a la vez las necesidades o ambiciones del usuario que realiza la
-configuración y las restricciones propias del dominio de la línea de productos
-\cite{Salinesi2012}.  Además, el proceso de configuración debe satisfacer
-algunas características no funcionales como: tiempo de respuesta, independencia
-del orden de selección, adaptación al entorno cambiante, selección de
+una línea de productos debe ser un proceso guiado paso a paso que satisfaga
+tanto las necesidades del usuario como las restricciones propias del dominio de
+la LPS \cite{Salinesi2012}.  Además, el proceso de configuración debe satisfacer
+algunas características no funcionales relacionadas con el tiempo de respuesta,
+el orden de selección, la adaptación a un entorno cambiante, y la selección de
 características óptimas de acuerdo a los intereses del usuario, entre otras
-\cite{Mazo2014}. Si en una configuración ninguno de sus elementos genera
-conflictos con otros elementos de la línea de productos, entonces la
-configuración es válida y representa los requerimientos de un producto que
-pertenece a la línea de productos, mientras que en caso contrario la
-configuración es inválida.
+\cite{Mazo2014}.
 
-En este sentido, nuestra investigación busca definir técnicas de apoyo a la
-configuración y establecer la forma de recibir los requerimientos de
-entrada de los usuarios, la información histórica y las restricciones
-relacionadas con el modelo de variabilidad. De igual forma, se desarrollará un
-sistema que permita a los usuarios configurar productos de la LPS y se definirán
-prácticas y criterios que deben seguirse en la línea de productos para facilitar
-la configuración guiada de los productos de software.
-
+El proceso de configuración es exitoso si logra construir una configuración
+válida. Una configuración válida no tiene conflictos entre sus elementos y
+representa los requerimientos de un producto que pertenece a la línea de
+productos.
+Nuestra investigación busca definir técnicas de apoyo a la configuración basadas
+en los requerimientos de los usuarios, la información de productos previamente
+configurados y las restricciones relacionadas con el modelo de variabilidad.
+Adicionalmente, se pretende definir las prácticas y los criterios que se deben
+seguir para facilitar la configuración guiada de los productos de software y 
+desarrollar herramientas que permitan a los usuarios configurar productos de una
+LPS.
 
 \subsubsection{Ensamblaje de componentes}
 \label{subsubSec:ensamblaje}
-Una vez se configuran los productos de la línea de productos, es necesario
-establecer mecanismos para construir el producto de software configurado
-\cite{Deelstra2005}. Este proceso, conocido como \textbf{ensamblaje}, consiste
-en tomar core assets de manera que minimizando el esfuerzo necesario para
-obtener cada producto en particular, sea posible obtener productos finales de la
-línea de productos \cite{Clements2001}.
+Una vez se configuran los productos de la línea de productos de software, es
+necesario establecer mecanismos para construir el producto de software
+configurado \cite{Deelstra2005}. Este proceso, conocido como
+\textbf{ensamblaje}, debe adem\'{a}s minimizar el esfuerzo necesario para
+obtener cada producto en particular \cite{Clements2001}.
 
-De esta forma, en nuestro proyecto de investigación, definiremos criterios y
-prácticas para la elaboración de artefactos reutilizables que puedan ser
-ensamblados de manera automática o semiautomática para generar productos que
-hagan parte de una LPS. Adicionalmente, se propondrán criterios para la
-definición de la arquitectura de líneas de productos de software de referencia y
-para la selección de las tecnologías con la que se implementarán los componentes
-reutilizables. Por último, se definirán prácticas y criterios para el ensamblaje
-de los componentes de software reutilizables y se implementarán estrategias para
-relacionar las elecciones hechas por el usuario en la configuración con los
-componentes reutilizables, de modo que éstos se puedan ensamblar con el fin de
-obtener el producto configurado.
+Otro propósito de nuestra investigación es definir criterios y prácticas para la
+elaboración de artefactos reutilizables que puedan ser ensamblados de manera
+automática o semiautomática para generar productos que hagan parte de una LPS.
+Adicionalmente, se busca desarrollar criterios para la definición de la
+arquitectura de los productos  y para la selección de las tecnologías con las
+que se implementan los componentes reutilizables. Por último, se busca definir
+prácticas y criterios para el ensamblaje de los componentes de software e
+implementar estrategias para relacionar las elecciones hechas por el usuario en
+la configuración con componentes específicos de la LPS.
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=7.6cm]{ejemplo.eps}
-\label{fig:ejemplo}
-\caption{Nota explicativa de la figura}
-\end{center}
-\end{figure}
-
-
-
-\subsection{Sub-secciones}
-\label{subsec:metamodel}
-
-Ejemplo de sub-sección.
-
+\section{Relación con el Sector Industrial}
+Nuestro grupo de investigación Destino está interesado en construir
+colaboraciones con empresas de desarrollo de software que quieran aportar algún
+dominio específico para la validación de los esquemas de modelado propuestos y
+la prueba de las herramientas desarrolladas. De momento, se está trabajando en
+el dominio de las aplicaciones biométricas con la empresa Acople Tecnológico
+S.A.
+Además, se está evaluando el dominio de las aplicaciones de apoyo a la
+rehabilitación auditiva que es un tema en el cual el grupo ha venido haciendo
+desarrollos en colaboración con el Instituto para Niños Ciegos y Sordos del
+Valle del Cauca. Es claro que entre mayor diversidad exista entre los dominios
+explorados, se podrá obtener una información más completa sobre las fortalezas y
+debilidades de los modelos, prácticas y herramientas desarrolladas para la
+construcción de líneas de productos de software. De esta evaluación surgirán
+también necesidades concretas aun no identificadas que darán origen a nuevas
+iniciativas de investigación y desarrollo.
 
 
 \section{Conclusiones}
 \label{sec:conclusiones}
-%
-Sección final que presenta un resumen del artículo y sus resultados concretos, analizados en una perspectiva más amplia, por ejemplo en cómo estos resultados pueden ser aplicados a otras aplicaciones o sectores.
-
-También podría incluir caminos de extensión o trabajo futuro.
-
-
-
-% conference papers do not normally have an appendix
+Las actuales prioridades de investigación en el campo de la ingeniería de
+software en nuestro grupo de investigación van en dos líneas: una es el
+desarrollo de herramientas teóricas que permitan facilitar el modelado riguroso
+de los dominios de aplicación, su depuración y evaluación. La otra es el
+apoyo a los procesos de configuración y ensamblaje de productos en las líneas de
+productos de software por medio de herramienta computacionales, así como la
+puesta a prueba de todo el sistema en dominios reales de aplicación, con la
+colaboración de empresas de software interesadas en la transferencia de este conocimiento.
 
 
 % use section* for acknowledgement
 \section*{Agradecimientos}
 
-Sección opcional para agradecimientos, por ejemplo fuentes de financiación, colaboración con empresas, universidades, etc.
+Esta línea de trabajo puede seguir desarrollándose gracias a la financiación
+recibida de la Pontificia Universidad Javeriana para el año 2015.
 
 
+% Las líneas de productos de software son un paradigma de producción de software
+% que promete materializar las consecuencias más importantes y positivas de una
+% buena gestión de la variabilidad. Ellas incorporan aspectos de modelado que
+% permiten capturar de manera rigurosa las características del dominio de
+% aplicación, y también aspectos relacionados con la configuración y el ensamblaje
+% de productos específicos, a partir de artefactos previamente construidos y
+% reutilizables que materialicen en el producto las características requeridas por
+% el cliente. 
+
+% Para desarrollar una línea de productos es necesario llevar a cabo diferentes
+% pasos. Así por ejemplo es necesario: (i) modelar los elementos comunes y
+% variables que tendrán los productos que harán parte de la línea de productos,
+% sus relaciones y las restricciones, (ii) diseñar y desarrollar los artefactos de
+% software  que permitirán obtener los productos de la línea de productos, (iii)
+% seleccionar los elementos que satisfacen un conjunto particular de
+% requerimientos para obtener productos de la línea de productos
+% (configuracion), y (iv) ensamblar artefactos previamente construidos
+% y reutilizables que materialicen en productos de software las características
+% requeridas por los clientes.
 
 \bibliographystyle{./IEEEtran}
 \bibliography{IEEEabrv,references}
 
 
 \end{document}
-
-
